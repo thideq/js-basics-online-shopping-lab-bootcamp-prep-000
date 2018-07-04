@@ -63,7 +63,7 @@ function removeFromCart(item) {
     }
   }
   if (removed===false) { 
-    return 'the item is not in your cart.';
+    return 'That item is not in your cart.';
   } 
   else {
     return cart;
