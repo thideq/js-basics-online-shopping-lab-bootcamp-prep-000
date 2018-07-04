@@ -55,10 +55,11 @@ function removeFromCart(item) {
   for (i=0; i<cart.length; i++) {
     if (cart[i].itemName==item) {
       removed=true;
-      
+      cart.splice(i,1);
+      console.log(removed);
     }
     else {
-      newCart[i] = cart[i];
+      console.log(i);
     }
   }
   if (removed) { 
