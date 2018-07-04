@@ -52,14 +52,13 @@ function removeFromCart(item) {
   // write your code here
   var i=0;
   var removed=false;
-  var newCart = [];
-  for (i=0;i<cart.length;i++) {
+  for (i=0; i<cart.length; i++) {
     if (cart[i].itemName==item) {
       removed=true;
-      console.log(cart[i].itemName)
+      
     }
     else {
-      newCart = newCart.push(cart[i]);
+      newCart[i] = cart[i];
     }
   }
   if (removed) { 
