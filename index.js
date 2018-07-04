@@ -63,10 +63,10 @@ function removeFromCart(item) {
     }
   }
   if (removed) { 
-    return 'the item is not in your cart.'
+    return 'the item is not in your cart.';
   } 
   else {
-    return newCart;
+    return cart;
   }
 }
 
