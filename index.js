@@ -62,7 +62,7 @@ function removeFromCart(item) {
       console.log(i);
     }
   }
-  if (removed) { 
+  if (removed===false) { 
     return 'the item is not in your cart.';
   } 
   else {
@@ -77,7 +77,7 @@ function placeOrder(cardNumber) {
     return 'Sorry, we don\'t have a credit card on file for you.'
   }
   else {
-    myString = `Your total cost is $${total(cart)}, which will be charge to the card ${cardNumber}.`
+    myString = `Your total cost is $${total(cart)}, which will be charged to the card ${cardNumber}.`
     cart = [];
   }
   return myString
